@@ -8,6 +8,7 @@
 $font-color: #000000;
 $body-background: #f3f3f3;
 $header-background: #202026;
+$tag-background: #e2e8f0;
 $green: #98c379;
 $blue: #61afef;
 $gray: #abb2bf;
@@ -56,6 +57,24 @@ body {
     .links {
       a {
         font-size: 1.1rem;
+      }
+    }
+  }
+  .section-container {
+    font-size: 0.85rem;
+    .section-title {
+      font-size: 1rem;
+    }
+    .tag-section-container {
+      .tag-section-title {
+        font-size: 0.95rem;
+      }
+      .tag-list-container {
+        .tag-badge {
+          background-color: $tag-background;
+          border-color: $light-gray !important;
+          font-size: 90%;
+        }
       }
     }
   }
