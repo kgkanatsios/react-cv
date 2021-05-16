@@ -4,6 +4,8 @@ import _ from "lodash"
 import Company from "./Company"
 import TagSection from "./TagSection"
 import CertificationList from "./CertificationList"
+import IconList from "./IconList"
+import List from "./List"
 
 function Section(props) {
   const tagSections = _.get(props, "tagSections", [])
@@ -25,10 +27,11 @@ function Section(props) {
         tagSections.map((tagSection, idx) => {
           return <TagSection {...tagSection} key={idx} />
         })}
-
+      {props.list && <List list={props.list} />}
       {props.certifications && (
         <CertificationList certifications={props.certifications} />
       )}
+      {props.iconSection && <IconList icons={props.iconSection} />}
     </div>
   )
 }
