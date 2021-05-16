@@ -1,7 +1,12 @@
 import React from "react"
+import _ from "lodash"
+
 import Company from "./Company"
+import TagSection from "./TagSection"
+import CertificationList from "./CertificationList"
 
 function Section(props) {
+  const tagSections = _.get(props, "tagSections", [])
   return (
     <div className="mb-3 section-container">
       {props.title && (
@@ -15,6 +20,14 @@ function Section(props) {
           className="section-text text-justify mb-1"
           dangerouslySetInnerHTML={{ __html: props.text }}
         />
+      )}
+      {tagSections &&
+        tagSections.map((tagSection, idx) => {
+          return <TagSection {...tagSection} key={idx} />
+        })}
+
+      {props.certifications && (
+        <CertificationList certifications={props.certifications} />
       )}
     </div>
   )
