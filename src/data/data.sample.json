@@ -1,0 +1,23 @@
+{
+  "header": {
+    "name": "John Doe",
+    "title": "Full Stack Web Developer",
+    "links": [
+      {
+        "icon": ["fab", "linkedin"],
+        "url": "https://www.linkedin.com/in/johndoe/",
+        "title": "linkedin.com/in/johndoe/"
+      },
+      {
+        "icon": ["fab", "github"],
+        "url": "https://www.github.com/johndoe",
+        "title": "github.com/johndoe"
+      },
+      {
+        "icon": ["fab", "bitbucket"],
+        "url": "https://bitbucket.org/johndoe/",
+        "title": "bitbucket.org/johndoe/"
+      }
+    ]
+  }
+}
