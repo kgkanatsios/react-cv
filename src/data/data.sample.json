@@ -19,5 +19,56 @@
         "title": "bitbucket.org/johndoe/"
       }
     ]
-  }
+  },
+  "pages":[
+    {
+      "showHeader":true,
+      "hasSidebar": true,
+      "mainColumn": {
+        "sections": [
+          {
+            "title": "Summary",
+            "company":{
+              "jobTitle": "Full Stack Web Developer",
+              "startDate": "2018-08",
+              "endDate": "2021-05",
+              "companyName": "Google LLC",
+              "companyPlace": "Mountain View, California"
+            },
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut lacus a nulla mattis volutpat vitae et enim. Morbi dolor ligula, hendrerit non sem eu, ultricies efficitur dolor. Nullam maximus ligula est, id scelerisque neque venenatis ullamcorper. Suspendisse efficitur scelerisque nunc quis vehicula. Nulla sed pharetra lorem. Integer quis turpis quis mi tincidunt tempus eu tristique massa. Nullam nisi lacus, scelerisque et dapibus nec, dapibus in nibh. Vestibulum ut diam lectus. Donec ipsum libero, ultrices eu vehicula a, congue et mauris. Donec sollicitudin semper rutrum.",
+            "list": [
+              "Online Courses",
+              "Local meetups",
+              "Networking events",
+              "Video Gaming"
+            ],
+            "iconSection":[
+              ["fab", "linkedin"],
+              ["fab", "github"],
+              ["fab", "bitbucket"]
+            ],
+            "tagSections": [
+              {
+                "title": "Back End",
+                "tagsList": [
+                  {
+                    "label": "Languages",
+                    "tags": ["PHP", "Python"]
+                  }
+                ]
+              }
+            ],
+            "certifications": [
+              {
+                "title": "",
+                "university": "",
+                "date":""
+              }
+            ]
+          }
+        ]
+      },
+      "sidebar": {}
+    }
+  ]
 }
