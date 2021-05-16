@@ -19,7 +19,7 @@ function Header(props) {
           <div className="title font-weight-lighter">{props.title}</div>
         )}
         {props.links && (
-          <div className="links mx-n3 mt-2 d-flex justify-content-center align-items-center">
+          <div className="links mx-n3 mt-2 d-flex justify-content-center flex-wrap align-items-center">
             {props.links.map((link, idx) => {
               return (
                 <a className="text-white mx-3" href={link.url} key={idx}>
