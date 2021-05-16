@@ -11,7 +11,10 @@ function Section(props) {
       )}
       {props.company && <Company {...props.company} />}
       {props.text && (
-        <div className="section-text text-justify mb-1">{props.text}</div>
+        <div
+          className="section-text text-justify mb-1"
+          dangerouslySetInnerHTML={{ __html: props.text }}
+        />
       )}
     </div>
   )
