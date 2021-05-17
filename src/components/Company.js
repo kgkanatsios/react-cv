@@ -25,7 +25,7 @@ function Company(props) {
         {companyName && (
           <span className="mr-3">
             <FontAwesomeIcon className="mr-1" icon={["fas", "building"]} />
-            {companyName}
+            <span className="font-weight-bold">{companyName}</span>
           </span>
         )}
         {companyPlace && (
@@ -39,9 +39,15 @@ function Company(props) {
   }
 
   return (
-    <div className="mb-1 company-container">
+    <div className="mb-2 company-container">
       {firstRow(props.jobTitle, props.startDate, props.endDate)}
       {secondRow(props.companyName, props.companyPlace)}
+      {props.text && (
+        <div
+          className="company-text text-justify mb-1"
+          dangerouslySetInnerHTML={{ __html: props.text }}
+        />
+      )}
     </div>
   )
 }
