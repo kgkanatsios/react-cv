@@ -8,7 +8,7 @@ function CertificationList(props) {
     certifications &&
     certifications.map((certification, idx) => {
       return (
-        <div className="mb-1 certification-container" key={idx}>
+        <div className="mb-2 certification-container" key={idx}>
           {certification.title && (
             <div className="font-weight-bold">{certification.title}</div>
           )}
