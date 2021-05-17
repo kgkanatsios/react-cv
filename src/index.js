@@ -1,5 +1,8 @@
 import React from "react"
 import ReactDOM from "react-dom"
+import Helmet from "react-helmet"
+import _ from "lodash"
+
 import "./style/global.scss"
 import App from "./components/App"
 import reportWebVitals from "./reportWebVitals"
@@ -12,8 +15,18 @@ import { fab } from "@fortawesome/free-brands-svg-icons"
 
 library.add(fas, fab)
 
+const titleData = []
+
+if (_.get(data, "header.name")) titleData.push(_.get(data, "header.name"))
+if (_.get(data, "header.title")) titleData.push(_.get(data, "header.title"))
+
 ReactDOM.render(
   <React.StrictMode>
+    <Helmet>
+      <title>
+        {titleData.length > 0 ? titleData.join(" | ") : "My CV by React App"}
+      </title>
+    </Helmet>
     <App data={data} />
   </React.StrictMode>,
   document.getElementById("root")
