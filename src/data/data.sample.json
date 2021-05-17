@@ -5,17 +5,17 @@
     "links": [
       {
         "icon": ["fab", "linkedin"],
-        "url": "https://www.linkedin.com/in/johndoe/",
+        "url": "#",
         "title": "linkedin.com/in/johndoe/"
       },
       {
         "icon": ["fab", "github"],
-        "url": "https://www.github.com/johndoe",
+        "url": "#",
         "title": "github.com/johndoe"
       },
       {
         "icon": ["fab", "bitbucket"],
-        "url": "https://bitbucket.org/johndoe/",
+        "url": "#",
         "title": "bitbucket.org/johndoe/"
       }
     ]
@@ -28,25 +28,31 @@
         "sections": [
           {
             "title": "Summary",
-            "company":{
-              "jobTitle": "Full Stack Web Developer",
-              "startDate": "2018-08",
-              "endDate": "2021-05",
-              "companyName": "Google LLC",
-              "companyPlace": "Mountain View, California"
-            },
-            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut lacus a nulla mattis volutpat vitae et enim. Morbi dolor ligula, hendrerit non sem eu, ultricies efficitur dolor. Nullam maximus ligula est, id scelerisque neque venenatis ullamcorper. Suspendisse efficitur scelerisque nunc quis vehicula. Nulla sed pharetra lorem. Integer quis turpis quis mi tincidunt tempus eu tristique massa. Nullam nisi lacus, scelerisque et dapibus nec, dapibus in nibh. Vestibulum ut diam lectus. Donec ipsum libero, ultrices eu vehicula a, congue et mauris. Donec sollicitudin semper rutrum.",
-            "list": [
-              "Online Courses",
-              "Local meetups",
-              "Networking events",
-              "Video Gaming"
-            ],
-            "iconSection":[
-              ["fab", "linkedin"],
-              ["fab", "github"],
-              ["fab", "bitbucket"]
-            ],
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut lacus a nulla mattis volutpat vitae et enim. Morbi dolor ligula, hendrerit non sem eu, ultricies efficitur dolor. Nullam maximus ligula est, id scelerisque neque venenatis ullamcorper. Suspendisse efficitur scelerisque nunc quis vehicula. Nulla sed pharetra lorem. Integer quis turpis quis mi tincidunt tempus eu tristique massa. Nullam nisi lacus, scelerisque et dapibus nec, dapibus in nibh. Vestibulum ut diam lectus. Donec ipsum libero, ultrices eu vehicula a, congue et mauris. Donec sollicitudin semper rutrum."
+          },
+          {
+            "title": "Professional Experience",
+            "companies": [
+              {
+                "jobTitle": "Full Stack Web Developer",
+                "startDate": "2018-08",
+                "endDate": "2021-05",
+                "companyName": "Google LLC",
+                "companyPlace": "Mountain View, California",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut lacus a nulla mattis volutpat vitae et enim. Morbi dolor ligula, hendrerit non sem eu, ultricies efficitur dolor. Nullam maximus ligula est, id scelerisque neque venenatis ullamcorper. Suspendisse efficitur scelerisque nunc quis vehicula."
+              },
+              {
+                "jobTitle": "Full Stack Web Developer",
+                "startDate": "2016-03",
+                "endDate": "2018-08",
+                "companyName": "Facebook, Inc.",
+                "companyPlace": "Menlo Park, California",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut lacus a nulla mattis volutpat vitae et enim. Morbi dolor ligula, hendrerit non sem eu, ultricies efficitur dolor. Nullam maximus ligula est, id scelerisque neque venenatis ullamcorper. Suspendisse efficitur scelerisque nunc quis vehicula."
+              }
+            ]
+          },
+          {
+            "title": "Skills",
             "tagSections": [
               {
                 "title": "Back End",
@@ -54,21 +60,98 @@
                   {
                     "label": "Languages",
                     "tags": ["PHP", "Python"]
+                  },
+                  {
+                    "label": "Frameworks",
+                    "tags": ["Laravel", "CodeIgniter", "Django"]
+                  },
+                  {
+                    "label": "Databases",
+                    "tags": ["MySQL", "MariaDB", "MongoDB", "PostgreSQL"]
+                  }
+                ]
+              },
+              {
+                "title": "Front End",
+                "tagsList":[
+                  {
+                    "label": "Languages",
+                    "tags": ["JavaScript", "HTML", "CSS"]
+                  },
+                  {
+                    "label": "JavaScript Frameworks/Libraries",
+                    "tags": ["Vue.JS", "jQuery"]
+                  },
+                  {
+                    "label": "CSS Frameworks",
+                    "tags": ["Bootstrap", "Tailwind CSS"]
                   }
                 ]
               }
-            ],
+            ]
+          },
+          {
+            "title":"Education",
             "certifications": [
               {
-                "title": "",
-                "university": "",
-                "date":""
+                "title": "Electrical Engineering and Computer Science",
+                "university": "Massachusetts Institute of Technology",
+                "date":"2007 - 2015"
               }
             ]
           }
         ]
       },
-      "sidebar": {}
+      "sidebar": {
+        "sections": [
+          {
+            "title": "About Me",
+            "list": [
+              "Date of Birth: 22/03/1990",
+              "Birth Place: Marousi, Attica, Greece"
+            ]
+          },
+          {
+            "title": "Contact",
+            "list": [
+              "myemail@domain.com",
+              "0030 691234567",
+              "My Address"
+            ]
+          },
+          {
+            "title": "Latest Side Project",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut lacus a nulla mattis volutpat vitae et enim."
+          },
+          {
+            "title": "Languages",
+            "certifications": [
+              {
+                "title": "Certificate of Competency in English",
+                "university": "University of Michigan"
+              }
+            ]
+          },
+          {
+            "title": "Interests",
+            "list": [
+              "Online Courses",
+              "Local meetups",
+              "Networking events",
+              "Video Gaming"
+            ]
+          },
+          {
+            "title": "Hobbies",
+            "iconSection":[
+              ["fas", "futbol"],
+              ["fas", "plane"],
+              ["fas", "camera"],
+              ["fas", "bowling-ball"]
+            ]
+          }
+        ]
+      }
     }
   ]
 }
