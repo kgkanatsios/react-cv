@@ -9,6 +9,7 @@ import List from "./List"
 
 function Section(props) {
   const tagSections = _.get(props, "tagSections", [])
+  const companies = _.get(props, "companies", [])
   return (
     <div className="mb-3 section-container">
       {props.title && (
@@ -16,10 +17,13 @@ function Section(props) {
           {props.title}
         </div>
       )}
-      {props.company && <Company {...props.company} />}
+      {companies &&
+        companies.map((company, idx) => {
+          return <Company {...company} key={idx} />
+        })}
       {props.text && (
         <div
-          className="section-text text-justify mb-1"
+          className="section-text text-justify mb-2"
           dangerouslySetInnerHTML={{ __html: props.text }}
         />
       )}
