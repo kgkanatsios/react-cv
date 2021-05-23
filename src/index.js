@@ -5,6 +5,7 @@ import _ from "lodash"
 
 import "./style/global.scss"
 import App from "./components/App"
+import GithubBadge from "./components/GithubBadge"
 import reportWebVitals from "./reportWebVitals"
 
 import data from "./data/data.json"
@@ -28,6 +29,7 @@ ReactDOM.render(
       </title>
     </Helmet>
     <App data={data} />
+    <GithubBadge />
   </React.StrictMode>,
   document.getElementById("root")
 )
