@@ -17,7 +17,7 @@ function App(props) {
     const mainColumnSections = _.get(page, "mainColumn.sections", [])
     const sidebarSections = _.get(page, "sidebar.sections", [])
     return (
-      <section key={idx} className="sheet">
+      <section key={idx} className="sheet m-0">
         {page.showHeader && header()}
         <Container fluid>
           <Row>

@@ -6,6 +6,7 @@ import _ from "lodash"
 import "./style/global.scss"
 import App from "./components/App"
 import GithubBadge from "./components/GithubBadge"
+import SaveAsPdfButton from "./components/SaveAsPdfButton"
 import reportWebVitals from "./reportWebVitals"
 
 import data from "./data/data.json"
@@ -28,8 +29,13 @@ ReactDOM.render(
         {titleData.length > 0 ? titleData.join(" | ") : "My CV by React App"}
       </title>
     </Helmet>
-    <App data={data} />
+    <div className="p-3">
+      <div id="main-cv" className="mx-auto d-table">
+        <App data={data} />
+      </div>
+    </div>
     <GithubBadge />
+    <SaveAsPdfButton titleData={titleData} />
   </React.StrictMode>,
   document.getElementById("root")
 )
