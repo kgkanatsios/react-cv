@@ -20,9 +20,9 @@
       }
     ]
   },
-  "pages":[
+  "pages": [
     {
-      "showHeader":true,
+      "showHeader": true,
       "hasSidebar": true,
       "mainColumn": {
         "sections": [
@@ -73,7 +73,7 @@
               },
               {
                 "title": "Front End",
-                "tagsList":[
+                "tagsList": [
                   {
                     "label": "Languages",
                     "tags": ["JavaScript", "HTML", "CSS"]
@@ -91,12 +91,12 @@
             ]
           },
           {
-            "title":"Education",
+            "title": "Education",
             "certifications": [
               {
                 "title": "Electrical Engineering and Computer Science",
                 "university": "Massachusetts Institute of Technology",
-                "date":"2007 - 2015"
+                "date": "2007 - 2015"
               }
             ]
           }
@@ -106,18 +106,11 @@
         "sections": [
           {
             "title": "About Me",
-            "list": [
-              "Date of Birth: 22/03/1990",
-              "Birth Place: Marousi, Attica, Greece"
-            ]
+            "list": ["Date of Birth: 22/03/1990", "Birth Place: Marousi, Attica, Greece"]
           },
           {
             "title": "Contact",
-            "list": [
-              "myemail@domain.com",
-              "0030 691234567",
-              "My Address"
-            ]
+            "list": ["myemail@domain.com", "0030 691234567", "My Address"]
           },
           {
             "title": "Latest Side Project",
@@ -134,16 +127,11 @@
           },
           {
             "title": "Interests",
-            "list": [
-              "Online Courses",
-              "Local meetups",
-              "Networking events",
-              "Video Gaming"
-            ]
+            "list": ["Online Courses", "Local meetups", "Networking events", "Video Gaming"]
           },
           {
             "title": "Hobbies",
-            "iconSection":[
+            "iconSection": [
               ["fas", "futbol"],
               ["fas", "plane"],
               ["fas", "camera"],
