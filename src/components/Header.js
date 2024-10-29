@@ -1,5 +1,5 @@
-import React from "react"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function Header(props) {
   return (
@@ -12,12 +12,8 @@ function Header(props) {
         <span className="light-blue-bg d-inline-block h-100"></span>
       </div>
       <div className="p-3">
-        {props.name && (
-          <div className="name font-weight-lighter">{props.name}</div>
-        )}
-        {props.title && (
-          <div className="title font-weight-lighter">{props.title}</div>
-        )}
+        {props.name && <div className="name font-weight-lighter">{props.name}</div>}
+        {props.title && <div className="title font-weight-lighter">{props.title}</div>}
         {props.links && (
           <div className="links mx-n3 mt-2 d-flex justify-content-center flex-wrap align-items-center">
             {props.links.map((link, idx) => {
@@ -26,13 +22,13 @@ function Header(props) {
                   <FontAwesomeIcon className="mr-2" icon={link.icon} />
                   {link.title}
                 </a>
-              )
+              );
             })}
           </div>
         )}
       </div>
     </header>
-  )
+  );
 }
 
-export default Header
+export default Header;
